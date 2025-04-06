@@ -20,10 +20,14 @@
     "build": {
       "name": "build",
       "command": "npm run build"
+      "runAtStart": false,
+
     },
     "preview": {
       "name": "preview",
       "command": "npm run preview"
+      "runAtStart": false,
+
     },
     "lint": {
       "name": "lint",
@@ -32,6 +36,10 @@
     "format": {
       "name": "format",
       "command": "npm run format"
+    },
+    "storybook": {
+      "name": "storybook",
+      "command": "storybook dev -p 6006"
     }
   }
 }
