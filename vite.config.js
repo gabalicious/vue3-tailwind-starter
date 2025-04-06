@@ -10,8 +10,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
+    alias: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
+    // alias: {
+    //   "@": fileURLToPath(new URL("./src", import.meta.url)),
+    // },
   },
 });

@@ -2,8 +2,8 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "command": "npm install",
-      "name": "Installing Dependencies"
+      "name": "Installing Dependencies",
+      "command": "npm install"
     }
   ],
 
@@ -20,18 +20,22 @@
     "build": {
       "name": "build",
       "command": "npm run build",
+      "runAtStart": false
     },
     "preview": {
       "name": "preview",
       "command": "npm run preview",
+      "runAtStart": false
     },
     "lint": {
       "name": "lint",
       "command": "npm run lint",
+      "runAtStart": false
     },
     "format": {
       "name": "format",
       "command": "npm run format",
+      "runAtStart": false
     }
   }
 }
